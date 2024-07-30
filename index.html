@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Grid Generator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <h1>Colour Grid Generator</h1>
+    <p><b>Instructions:</b> Type in RGB entries (e.g. 255, 100, 150) in each row.</p>
+    <p>Then click on the button to see the grid output.</p>
+
+    <form action="/display" method="POST">
+        <textarea name="rgb_values" rows="10" cols="20" placeholder="Enter RGB values in each line"></textarea>
+        <br>
+        <button type="submit">Generate Grid Now!</button>
+    </form>
+
+    <form action="/generate_random" method="GET">
+        <button type="submit">Generate 100 Random Colours</button>
+    </form>
+</body>
+
+</html>
